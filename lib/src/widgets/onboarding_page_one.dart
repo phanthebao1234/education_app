@@ -40,7 +40,7 @@ class OnboardingPageOne extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                       Image.asset(
-                        R.ASSETS_IMAGES_EDUCATION_PNG,
+                        R.ASSETS_IMAGES_SAMOHVAL_PNG,
                         fit: BoxFit.cover,
                       )
                     ],
