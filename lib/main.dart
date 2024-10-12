@@ -3,6 +3,7 @@ import 'package:education_app/common/utils/environment.dart';
 import 'package:education_app/common/utils/kstrings.dart';
 import 'package:education_app/src/auth/controllers/password_notifier.dart';
 import 'package:education_app/src/entrypoint/controllers/bottom_tab_notifier.dart';
+import 'package:education_app/src/home/controllers/home_notifier.dart';
 import 'package:education_app/src/onboarding/controllers/onboarding_notifier.dart';
 import 'package:education_app/src/splashscreen/views/SplashScreen_view.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,7 @@ void main() async {
       ChangeNotifierProvider(create: (_) => OnboardingNotifier()),
       ChangeNotifierProvider(create: (_) => PasswordNotifier()),
       ChangeNotifierProvider(create: (_) => TabIndexNotifier()),
+      ChangeNotifierProvider(create: (_) => HomeTabNotifier()),
     ],
     child: const MyApp(),
   ));
